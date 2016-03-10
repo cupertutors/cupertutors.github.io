@@ -1,0 +1,50 @@
+
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+.row:after,
+.row:before {
+	display: table;
+	content: " "
+}
+
+.row:after {
+	clear: both
+}
+
+.col-sm-3
+{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+@media (min-width:768px) {
+	.col-sm-3 {
+		float: left;
+		width: 25%
+	}
+}
