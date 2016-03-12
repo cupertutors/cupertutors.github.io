@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="HandheldFriendly" content="True">
+
+		<title>Registration</title>
+
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/concise.min.css" />
+		<!-- <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/starter.css"/> -->
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/masthead.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/test.css"/>
+		<style>
+			.img-circle {
+				border-radius: 50%;
+			}
+			.team-member {
+				transition: all .2s ease-in-out;
+			}
+			.team-member:hover {
+				transform: scale(1.2);
+			}
+			.siteContent {
+				padding: 10px 0;
+				text-align: center;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<header container class="siteHeader">
+			<div row>
+				<h1 column=4 class="logo">Registration</h1>
+				<nav column=8 class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="classes.html">Classes</a></li>
+					<li><a href="registration.html">Registration</a></li>
+					<li><a href="photo.html">Photo Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="masthead">
+			<div container>
+				<h2 class="masthead-title kilo">Want To Sign Up To Be A Student Or A Tutor?<br>Register Below!</h2>
+			</div>
+		</div>
+
+		<main container class="siteContent">
+			<div class="row">
+				<div class = "col-sm-6">
+					<h4><a href="" onclick="document.getElementById('hiddenStudentForm').style.display='block'; return false;">Click Here for New Students</a></h4>
+					<div style="display: none;" id="hiddenStudentForm">
+						<form method="post">
+							<fieldset style="text-align: left">
+								<legend>User Information</legend>
+								<p>
+									<label for="name">Name:</label>
+									<input type="text" name="name" placeholder="John Doe"/>
+								</p>
+								<p>
+									<label for="email">Email:</label>
+									<input type="email" name="email" placeholder="john_doe@example.com"/>
+								</p>
+								<p>
+									<label for="school">School:</label>
+									<input type="text" name="school" placeholder="Kennedy Middle School"/>
+								</p>
+								<p>
+									<label for="classes">Classes:</label>
+									<input type="checkbox" name="classes" value="AMC 8"> <label for="AMC 8">AMC 8</label><br>
+									<input type="checkbox" name="classes" value="AMC 10"> <label for="AMC 10">AMC 10</label><br>
+									<input type="checkbox" name="classes" value="USACO Bronze"> <label for="USACO Bronze">USACO Bronze</label><br>
+									<input type="checkbox" name="classes" value="USACO Silver"> <label for="USACO Silver">USACO Silver</label><br>
+									<input type="checkbox" name="classes" value="Chem Olympiad Local Round"> <label for="Chem Olympiad Local Round">Chem Olympiad Local Round</label>
+								</p>
+								<p>
+									<label for="comments/questions">Additional comments/questions:</label>
+									<textarea name="comments/questions" rows="6"></textarea>
+								</p>
+								<input type="submit" value="Submit">
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<h4><a href="" onclick="document.getElementById('hiddenTutorForm').style.display='block'; return false;">Click Here for Tutors</a></h4>
+					<div style="display: none;" id="hiddenTutorForm">
+						<form method="post">
+							<fieldset style="text-align: left">
+								<legend>User Information</legend>
+								<p>
+									<label for="name">Name:</label>
+									<input type="text" name="name" placeholder="John Doe" />
+								</p>
+								<p>
+									<label for="Age">Age:</label>
+									<input type="number" name="age" min = "1" max="100" placeholder="15"/>
+								</p>
+								<p>
+									<label for="email">Email:</label>
+									<input type="email" name="email" placeholder="john_doe@example.com" />
+								</p>
+								<p>
+									<label for="name">Position:</label>
+									<input type="checkbox" name="tutorpos" value="math"> <label for="math">Math Tutor</label><br>
+									<input type="checkbox" name="tutorpos" value="cs"> <label for="cs">Computer Science Tutor</label><br>
+									<input type="checkbox" name="tutorpos" value="chem"> <label for="chem">Chemistry Tutor</label><br>
+								</p>
+								<p>
+									<label for="qualifications">List your qualifications and experiences:</label>
+									<textarea name="qualifications" rows="6"></textarea>
+								</p>
+								<p>
+									<label for="why">Why do you want to be a tutor?</label>
+									<textarea name="why" rows="6"></textarea>
+								</p>
+								<p>
+									<label for="resume">Short bio or resume about yourself:</label>
+									<textarea name="resume" rows="6"></textarea>
+								</p>
+								<p>
+									<label for="comments/questions">Additional comments/questions:</label>
+									<textarea name="comments/questions" rows="6"></textarea>
+								</p>
+								<input type="submit" value="Submit">
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<br><br><br>
+			</div>
+		</main>
+
+		<footer container class="siteFooter">
+			<p>Copyright &copy; 2016 by CuperTutors</p>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="../js/concise.min.js"></script>
+	</body>
+</html>
