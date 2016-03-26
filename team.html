@@ -11,22 +11,40 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/concise.min.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/starter.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/test.css"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/tooltip.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 		<style>
 			.img-circle {
 				border-radius: 50%;
 			}
+			.team-member a p {
+				color: #555;
+			}
 			.team-member {
+				display: block;
 				transition: all .2s ease-in-out;
 			}
 			.team-member:hover {
-				transform: scale(1.2);
+				transform: scale(1.1);
+			}
+			#blurb {
+				/*display: block;*/
 			}
 			.siteContent {
 				padding: 10px 0;
 				text-align: center;
 			}
-
 		</style>
+		<script type="text/javascript">
+			function show_blurb() {
+				// $("#blurb").css({visibility:"visible", opacity: 0.0}).animate({opacity: 1.0},500);
+			}
+			function hide_blurb() {
+				// document.getElementById('blurb').style.visibility="hidden";
+			}
+		</script>
 	</head>
 
 	<body>
@@ -48,54 +66,69 @@
 
 		<main container class="siteContent">
 			<h2>Our Team</h2>
+			<div id = "blurb">Click on the images to read more about them!</div>
+			<br><br>
 			<div class="row">
 				<div class = "col-sm-3">
 					<div class = "team-member">
-						<img src = "img/team/andrew.png" class = "img-circle" alt="">
-						<h4>Andrew Yeh</h4>
-						<p>Director of Mathematics</p>
+						<a href = "team/andrew.html">
+							<img src = "img/team/andrew.png" class = "img-circle" alt="" onMouseOver="show_blurb()" onMouseOut="hide_blurb()">
+							<h4>Andrew Yeh</h4>
+							<p>Founder, Director of Mathematics</p>
+						</a>
 					</div>
 				</div>
 				<div class="col-sm-3">
 					<div class = "team-member">
-						<img src = "img/team/victor.png" class = "img-circle" alt="">
-						<h4>Victor Yin</h4>
-						<p>Director of Computer Science</p>
+						<a href = "team/victor.html">
+							<img src = "img/team/victor.png" class = "img-circle" alt="" onMouseOver="show_blurb()" onMouseOut="hide_blurb()">
+							<h4>Victor Yin</h4>
+							<p>Founder, Director of Computer Science</p>
+						</a>
 					</div>
 				</div>
 				<div class="col-sm-3">
 					<div class = "team-member">
-						<img src = "img/team/neil.png" class = "img-circle" alt="">
-						<h4>Neil Palleti</h4>
-						<p>Director of Outreach</p>
+						<a href = "team/neil.html">
+							<img src = "img/team/neil.png" class = "img-circle" alt="" onMouseOver="show_blurb()" onMouseOut="hide_blurb()">
+							<h4>Neil Palleti</h4>
+							<p>Founder, Director of Outreach</p>
+						</a>
 					</div>
 				</div>
 				<div class="col-sm-3">
 					<div class = "team-member">
-						<img src = "img/team/steven.png" class = "img-circle" alt="">
-						<h4>Steven Liu</h4>
-						<p>Director of Operations</p>
+						<a href = "team/steven.html">
+							<img src = "img/team/steven.png" class = "img-circle" alt="" onMouseOver="show_blurb()" onMouseOut="hide_blurb()">
+							<h4>Steven Liu</h4>
+							<p>Director of Operations</p>
+						</a>
+					</div>
+				</div>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<div class="col-sm-3">
+					<div class = "team-member">
+						<a href = "team/bryan.html">
+							<img src = "img/team/bryan.png" class = "img-circle" alt="" onMouseOver="show_blurb()" onMouseOut="hide_blurb()">
+							<h4>Bryan Chen</h4>
+							<p> Computer Science Tutor</p>
+						</a>
 					</div>
 				</div>
 				<div class="col-sm-3">
 					<div class = "team-member">
-						<img src = "img/team/bryan.png" class = "img-circle" alt="">
-						<h4>Bryan Chen</h4>
-						<p> Computer Science Tutor</p>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class = "team-member">
-						<img src = "img/team/michael.png" class = "img-circle" alt="">
-						<h4>Michael Wan</h4>
-						<p> Computer Science & Math Tutor, Webmaster</p>
+						<a href = "team/michael.html">
+							<img src = "img/team/michael.png" class = "img-circle" alt="" onMouseOver="show_blurb()" onMouseOut="hide_blurb()">
+							<h4>Michael Wan</h4>
+							<p> Computer Science & Math Tutor, Webmaster</p>
+						</a>
 					</div>
 				</div>
 			</div>
 		</main>
 
 		<footer container class="siteFooter">
-			<p>Copyright &copy; 2016 by CuperTutors</p>
+			<p>Copyright &copy; 2016 by CuperTutors <span style = "float: right"><a href = "mailto: cupertutors@gmail.com"><i class="fa fa-envelope"></i></a></span></p>
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
