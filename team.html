@@ -13,8 +13,11 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/starter.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/test.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/tooltip.css"/>
+		<link rel="stylesheet" type="text/css" media = "screen" href="stylesheets/odometer/odometer-theme-plaza.css"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
 
 		<style>
 			.img-circle {
@@ -134,12 +137,21 @@
 					</div>
 				</div>
 			</div>
+			<br>
+			<!-- <span>Together, we have contributed&nbsp;</span><span class="counter" style="display: inline-block">300</span><span>&nbsp;hrs.&nbsp;</span><span>to society</span> -->
 		</main>
 
 		<footer container class="siteFooter">
 			<p>Copyright &copy; 2016 by CuperTutors <span style = "float: right"><a href = "mailto: cupertutors@gmail.com"><i class="fa fa-envelope"></i></a></span></p>
 		</footer>
-
+		<script>
+			jQuery(document).ready(function($) {
+				$('.counter').counterUp ({
+					delay: 10,
+					time: 1000
+				});
+			});
+		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="../js/concise.min.js"></script>
 	</body>
