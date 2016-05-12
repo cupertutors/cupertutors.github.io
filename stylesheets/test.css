@@ -124,6 +124,14 @@
   padding-left: 15px
 }
 
+.col-sm-12
+{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
 @media (min-width:768px) {
   .col-sm-1 {
     float: left;
@@ -168,5 +176,9 @@
   .col-sm-11 {
     float: left;
     width: 91.667%
+  }
+  .col-sm-12 {
+    float: left;
+    width: 100%
   }
 }
